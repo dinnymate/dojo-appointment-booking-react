@@ -1,0 +1,7 @@
+{:cache-root "target/shadow-cljs"
+ :nrepl false
+ :builds {:app {:target :browser
+                :output-dir "target/js/public"
+                :asset-path "assets/"
+                :compiler-options {:infer-externs :true}
+                :modules {:app {:init-fn dojo-appointment.client.core/-main}}}}}
